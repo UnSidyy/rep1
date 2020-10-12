@@ -1,0 +1,54 @@
+Debut Min-Max ( Deluxe )
+    Debut declaration Variables Locales
+        Var Pos : N <- 0    Var Saisie : N <- 0
+        Var Min : N <- 0    Var Posmax : N <- 0
+        Var Max : N <- 0    Var Posmin : N <- 0
+        Var Omax : N <- 0   Var Dermax : N <- 0
+        Var Omin : N <- 0   Var Dermin : N <- 0
+    Fin declaration Variables Locales
+   Afficher " Veuillez saisir un nombre, saisir 100 pour terminer "
+   Saisir : Saisie
+   Si Saisie = 100
+      alors
+         Afficher " pas de valeurs entrées"
+      sinon
+         pos = 1
+         Min = Saisie
+         Posmax = 1
+         Posmin = 1
+         Max = Saisie
+         Dermax = 1
+         Dermin = 1
+         Saisir : Saisie
+         Tant que saisie =/ 100
+            pos = pos+1
+            Si Min > Saisie
+               Alors
+                  Min = Saisie
+                  Dermin = Pos
+                  Omin = 1
+                  Posmin = Pos
+               Sinon
+                  si Min = Saisie
+                     Alors
+                        Omin = Omin + 1
+                        Dermin = Pos
+                  Fin si
+            Fin si
+            Si Max < Saisie
+               Alors
+                  Max = Saisie
+                  Dermax = Pos
+                  Omax = 1
+                  Posmax = Pos
+               Sinon
+                  si Max = Saisie
+                     Alors
+                        Omax = Omax + 1
+                        Dermax = Pos
+                     Fin si
+           Fin si
+       Fin tant que
+       Affichage "Bla bla bleh..."
+   Fin si
+Fin Min - Max

@@ -1,0 +1,11 @@
+var i = 0
+var j = 0
+var r = 0
+
+Pour i allant de 0 à 9
+    pour j allant de 0 à 9
+        pour r allant de 0 à 9
+            Afficher i, j, r
+        r suivant
+    j suivant
+i suivant

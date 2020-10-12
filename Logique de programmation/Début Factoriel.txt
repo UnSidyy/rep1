@@ -1,0 +1,22 @@
+Début Factoriel
+	Déclaration des variables locales
+		VAR entre :N <- 0
+		VAR factoriel :N <- 1
+		VAR nbr :N <- 1
+	Déclaration des variables locales
+	
+	Afficher "Entrez un nombre entier positif"
+	Saisir entre
+	
+	Tant que (entre < 0 ou entre mod != 0)
+		Saisir entre
+	FINTANTQUE
+	
+	factoriel <-1
+	nbr <-2
+	Tant que (nbr <= entre)
+		factoriel <- factoriel * nbr
+		nbr <- nbr + 1
+	FINTANTQUE
+	Afficher factoriel
+Fin Factoriel

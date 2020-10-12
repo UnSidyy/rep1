@@ -1,0 +1,16 @@
+Début compteurDigital2
+    VARIABLES
+        VAR cpt:N = 0
+    VARIABLES
+
+    TANT QUE cpt<999
+        cpt = cpt + 1
+        Affiche cpt
+            TANT QUE cpt<100
+                Afficheb "0", cpt
+                    TANT QUE cpt <10
+                        Affiche "0", cpt
+                    FIN
+            FIN
+    FIN
+Fin compteurDigital2

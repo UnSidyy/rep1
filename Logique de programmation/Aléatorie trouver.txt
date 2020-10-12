@@ -1,0 +1,26 @@
+Début aléatoire
+    VARIABLES
+        VAR entre <- 0
+        VAR a <- 0
+        VAR essai <- 0
+    VARIABLES
+
+        a = aléatoire (1001)
+        Affiche "Trouve le nombre en 10 essais"
+        Saisir entre
+        Si (entre = a)
+            Affiche "Bravo ! Du premier coup !"
+        Sinon
+            Tant que (a =/ entre ET essai < 10)
+                Si (a > entre)
+                    Affiche "C'est plus !"
+                Sinon
+                    Affiche "C'est moin !"
+                FIN Si
+                essai = essai + 1
+                Saisir entre
+            FIN Tant que
+
+            Affiche "Bravo !"
+        FIN Si
+Fin aléatoire 

@@ -1,0 +1,23 @@
+Début compteurDigital
+    VARIABLES
+        VAR n1:N = 0
+        VAR n2:N = 0
+        VAR n3:N = 0
+    VARIABLES
+
+    REPETER 
+        TANT QUE (n3 < 9)
+            Affiche "n1, n2, n3"
+            n3 = n3+1
+        FIN TANT QUE
+
+        n3 = 0
+
+        Si (n2 < 9)
+            n2 = n2+1
+        Sinon
+            n1 = n1+1
+            n2 = 0
+            n3 = 0
+    JUSQU'A CE QUE (n1 = 9 ET n2 = 9 ET n3 = 9)
+Fin compteurDigital

@@ -1,0 +1,52 @@
+Début minMax
+	Déclarations des variables locales
+		VAR entre :N <- 0
+		VAR boucleEntre <- 0
+		VAR maxNombre <- 0
+		VAR minNombre <- 0
+		VAR maxNombre1 <- 0
+		VAR minNombre1 <- 0
+		VAR max :N <- 0
+		VAR min :N <- 0
+	Fin déclarations des variables locales
+
+	Afficher "Introduisez une suite de valeurs"
+	Afficher "Pour stopper le programme introduisez le nombre 100"
+
+	Saisir entre
+
+	Si (entre =/ 100)
+	 ALORS
+	 	boucleEntre <- 1
+	 	max <- entre 
+	 	min <- entre
+	 	maxNombre1 <- boucleEntre 
+	 	minNombre1 <- boucleEntre
+	 	Saisir entre
+
+	 	Tant que (entre =/ 100)
+	 		boucleEntre <- boucleEntre + 1
+	 		Si (max < entre)
+	 		ALORS
+	 			max <- entre
+	 			maxNombre <- boucleEntre
+	 		FINDESI
+	 		Si (min > entre)
+	 		ALORS
+	 			min <- entre
+	 			minNombre <- boucleEntre
+	 		FINDESI
+			Saisir entre
+		FINTANTQUE
+		Afficher "Valeur max :", max
+		Afficher "Valeur min :", min
+		Afficher "Position premier nombre max :", maxNombre1
+		Afficher "Position premier nombre min :", minNombre1
+		Afficher "Position dernier nombre max :", maxNombre
+		Afficher "Position dernier nombre min :", minNombre
+	SINON
+		Afficher "Pas de valeurs correctes"
+	FINDESI
+Fin minMax
+
+

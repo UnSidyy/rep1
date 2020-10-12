@@ -1,0 +1,8 @@
+Début compteurDigital4
+
+nombre = 0
+
+Pour nombre allant de 0 à 999
+    Afficher (nombre div 100), ((nombre mod 100)div 10), (nombre mod 10)
+    nombre suivant
+Fin compteurDigital4

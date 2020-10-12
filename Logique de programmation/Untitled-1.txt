@@ -1,0 +1,5 @@
+TANT QUE cpt<1000
+    TANT QUE cpt<100
+        Afficheb "0", cpt
+            TANT QUE cpt <10
+                Affiche "00", cpt

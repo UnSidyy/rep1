@@ -1,0 +1,27 @@
+Début Moyenne1020
+	Déclaration variables locales
+		VAR entre :N <- 0
+		VAR cpt :N <-0
+		VAR saisie :N <- 1
+		VAR totalentre :N <- 0
+		VAR moyenne :N <- 0
+		VAR valide :N <- 0
+	Déclaration variables locales
+
+		Pour cpt allant de 1 a 30
+			Afficher "Taper le nombre", saisie
+			saisie <- saisie +1
+			Saisir entre
+			Si (entre >= 10 et entre =<20)
+			Alors
+				totalentre <- totalentre + entre
+				valide <- valide + 1
+			Sinon
+				Afficher "Entre 10 et 20 seulement"
+			Fin si
+		cpt suivant
+		
+		moyenne <- totalentre/valide
+	
+		Afficher "La moyenne de vos nombre 10-20 est :", moyenne
+Fin Moyenne1020
