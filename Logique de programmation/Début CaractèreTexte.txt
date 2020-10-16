@@ -5,6 +5,7 @@ Début CaractèreTexte
         similaire :N <- 0
         result :T <- ''
         cpt :N <- 0
+        cpt0 :N <- 0
         pos :N <- 0
         posfin :N <- 0
     DECLARATION VARIABLES LOCALES
@@ -16,8 +17,7 @@ Début CaractèreTexte
 
     cpt <- longueur(entree)
 
-    Tant que cpt
-        result <- SousChaine(entree, cpt, longueur(caract))
+    Tant que cpt0 <= cpt
         Si (result == caract)
         ALORS
             Si pos == 0
