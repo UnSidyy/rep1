@@ -1,0 +1,41 @@
+Début CaractèreTexte
+    DECLARATION VARIABLES LOCALES
+        VAR entree :T <- ""
+        VAR caract :C <- ''
+        similaire :N <- 0
+        result :T <- ''
+        cpt :N <- 0
+        pos :N <- 0
+        posfin :N <- 0
+    DECLARATION VARIABLES LOCALES
+
+    Afficher "Entrez votre texte"
+    Saisir entree
+    Afficher "Entrez votre caractère"
+    Saisir caract
+
+    cpt <- longueur(entree)
+
+    Tant que cpt
+        result <- SousChaine(entree, cpt, longueur(caract))
+        Si (result == caract)
+        ALORS
+            Si pos == 0
+            ALORS
+                pos <- i
+            Sinon
+                posfin <- i
+            Fin si
+            similaire <- similaire + 1
+        Fin si
+    Fin tant que
+
+    Si pos !=0 
+    ALORS   
+        Afficher "Le caractère est apparut similaire fois"
+        Afficher "Sa première position :", pos
+        Afficher "Sa dernière postion :", posfin
+    Sinon
+        Afficher "Erreur"
+    Fin si 
+Fin CaractèreTexte
