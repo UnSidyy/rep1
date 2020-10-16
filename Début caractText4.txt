@@ -1,0 +1,28 @@
+Début caractText4
+
+    DECLARATION VARIABLES
+        VAR textEntree :T <- ""
+        VAR debut :N <- 0
+        VAR fin :N <- 0
+        VAR cpt :N <- 1
+        VAR result :T <- ""
+    DECLARATION VARIABLES
+
+    Afficher "Veuillez entrer un texte"
+    Saisir textEntree
+    Afficher "Veuillez entrer votre caractère de début"
+    Saisir debut
+    Afficher "Veuillez entrer votre caractère de fin"
+    Saisir fin
+
+    Si debut > 0 et fin <= longueur(textEntree)
+        Pour cpt de debut a fin-1
+            result = result (+) caract(textEntree, cpt)
+        cpt suivant
+    Sinon
+        Afficher "Demande impossible"
+    Fin Si
+
+    Afficher "Voici le résultat :", result
+
+Fin caractText4
