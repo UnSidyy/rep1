@@ -1,0 +1,32 @@
+Début caractText2
+
+    DECLARATION VARIABLES
+        VAR textEntree :T <- ""
+        VAR textTest :T <- ""
+        VAR cpt :N <- 1
+        VAR similaire :N <- 0
+        VAR pos1 :N <- 0
+        VAR posf :N <- 0
+    DECLARATION VARIABLES
+
+    Afficher "Veuillez entrer un texte"
+    Afficher "Veuillez entrer un texte à tester"
+
+    Tant que cpt <- longueur(textEntree)
+        Si textTest == SousChaine(textEntree, cpt, longueur(textTest))
+         similaire <- similaire + 1
+            Si pos1 == 0 
+                pos1 <- cpt
+            Fin si
+            posf <- cpt
+        Fin si
+        cpt <- cpt + 1
+    Fin tant que
+
+    Si similaire >= 1
+        Afficher "La premiere position du text testé est :", pos1
+        Afficher "La dernière position du text testé est :", posf
+        Afficher "Le texte testé est apparut", similaire, "fois dans le texte de base"
+    Sinon
+        Afficher "Il n'y a pas le texte testé dans le texte de base"
+    Fin si
