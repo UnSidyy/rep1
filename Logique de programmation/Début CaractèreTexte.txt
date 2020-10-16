@@ -18,15 +18,15 @@ Début CaractèreTexte
     cpt <- longueur(entree)
 
     Tant que cpt0 <= cpt
-        Si (result == caract)
+        Si (caract == caract(entree, cpt0))
         ALORS
             Si pos == 0
             ALORS
                 pos <- i
-            Sinon
-                posfin <- i
             Fin si
+			posfin <- i
             similaire <- similaire + 1
+            cpt0 <- cpt0 + 1
         Fin si
     Fin tant que
 
