@@ -1,0 +1,30 @@
+Début caractText3
+
+    DECLARATION VARIABLES
+        VAR textEntree :T <- ""
+        VAR textRemplacement :T <- ""
+        VAR textRecherche :T <- ""
+        VAR textModif :T <- ""
+        VAR cpt :N <- 1
+    DECLARATION VARIABLES
+
+    Afficher "Veuillez entrer un texte"
+    Saisir textEntree
+    Qfficher "Veuillez entrer le texte à rechercher"
+    Saisir textRecherche
+    Afficher "Veuillez entrer le texte de remplacement"
+    Saisir textRemplacement
+
+    Tant que cpt <- (longueur(textEntree) - longueur(textRecherche))
+        Si textRemplacement != SousChaine(textEntree, cpt, cpt+longueur(textTest))
+            cpt <- cpt + texte
+            textModif <- textModif + textRemplacement
+
+        Sinon
+            textModif <- textModif + caract(textEntree, cpt)
+            cpt <- cpt + 1
+        Fin si
+    Fin tant que
+
+    Afficher textModif
+Fin caractText3
