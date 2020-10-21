@@ -1,0 +1,73 @@
+début minMaxVecteur
+    début  variables locales
+        const TAILLE:N <- 20
+        var tab:N[TAILLE]
+        var min:N <- 0
+        var max:N <- 0
+        var indMin:N <- 1
+        var indMax:N <- 1
+        var ind:N <- 0
+    fin variables locales
+
+    pour ind allant de 1 à TAILLE
+        saisir tab[ind]
+    ind suivant
+
+    min <- tab[indMin]
+    max <- tab[indMax]
+
+    pour ind allant de 2 à TAILLE
+        si tab[ind] > max
+            ALORS
+                indMax <- ind
+                max <- tab[indMax]
+            SINON 
+                si tab[ind] < min
+                    ALORS
+                        indMin <- ind
+                        min <- tab[indMin]
+                finsi
+
+        finsi
+    ind suivant
+
+    Afficher "le minimum est ", min, "et sa position est ",indMin
+    Afficher "le maximum est ", max, "et sa position est ", indMax 
+    
+fin minMaxVecteur
+
+
+/****************JUSTE AVEC LES VARIABLES INDICES************************/
+
+
+début minMaxVecteur
+    début  variables locales
+        const TAILLE:N <- 20
+        var tab:N[TAILLE]
+        var indMin:N <- 1
+        var indMax:N <- 1
+        var ind:N <- 0
+    fin variables locales
+
+    pour ind allant de 1 à TAILLE
+        saisir tab[ind]
+    ind suivant
+
+
+    pour ind allant de 2 à TAILLE
+        si tab[ind] > tab[indMax]
+            ALORS
+                indMax <- ind
+            SINON 
+                si tab[ind] < tab[indMin]
+                    ALORS
+                        indMin <- ind
+                finsi
+
+        finsi
+    ind suivant
+
+    Afficher "le minimum est ", tab[indMin], "et sa position est ",indMin
+    Afficher "le maximum est ", tab[indMax], "et sa position est ", indMax 
+    
+fin minMaxVecteur

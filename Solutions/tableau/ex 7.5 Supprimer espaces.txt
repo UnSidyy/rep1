@@ -1,0 +1,28 @@
+DEBUT ex_7_5
+    VARIABLES LOCALES :
+        CONST TAILLE:N<-23
+        var cotes:N[ind]
+        var ind:N<-1
+        //Variables de stockage
+        var cpt:N<-0
+        var space:T<-" "
+    FIN VARIABLES LOCALES
+
+    //Déplacement des caractères non " " et ajout d'un compteur de " "
+    POUR  ind allant de 1 à TAILLE
+        SI cote[ind]=" "
+            alors
+                cpt<-cpt+1
+            SINON
+                SI cpt!=0
+                    alors
+                        cote[ind-cpt]<-cote[ind]
+                FINSI
+        FINSI
+	ind SUIVANT
+
+    //Ajout des espaces à la fin
+    POUR ind allant de (TAILLE+1-cpt) à TAILLE
+        cote[ind]<-space
+    ind SUIVANT
+FIN ex_7_5
