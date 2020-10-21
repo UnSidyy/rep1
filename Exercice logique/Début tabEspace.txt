@@ -1,0 +1,25 @@
+Début tabEspace
+    VARIABLES LOCALES
+        CONST TAILLE:N<-23
+        VAR tab:N [ind]
+        VAR ind:N <- 1
+        VAR cpt:N <- 0
+        VAR espace:T <- " "
+    VARIABLES LOCALES
+
+    POUR  ind ALLANT DE 1 à TAILLE
+        Si tab[ind] = " "
+            ALORS
+                cpt <- cpt + 1
+            SINON
+                Si cpt != 0
+                    ALORS
+                        tab[ind-cpt]<-cote[ind]
+                FINSI
+        FINSI
+	ind suivant
+
+    POUR ind ALLANT DE (TAILLE + 1 - cpt) à TAILLE
+        tab[ind] <- espace
+    ind suivant
+Début tabEspace
