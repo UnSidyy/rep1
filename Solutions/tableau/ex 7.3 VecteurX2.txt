@@ -1,0 +1,16 @@
+Debut prog VecteurX2
+    Declaration Variables Locales
+        Const Taille:N <- 16
+        Var   tab:N[Taille]
+        Var ind : N <-1
+
+    Fin Declaration Variables Locales
+
+    tab[1] <-1
+
+    pour ind allant de 2 a Taille
+       tab[ind] <- tab[ind - 1] * 2
+       
+    ind suivant
+
+Fin  prog VecteurX2
