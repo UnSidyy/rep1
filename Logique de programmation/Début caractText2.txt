@@ -12,7 +12,7 @@ Début caractText2
     Afficher "Veuillez entrer un texte"
     Afficher "Veuillez entrer un texte à tester"
 
-    Tant que cpt <- longueur(textEntree)
+    Tant que cpt = longueur(textEntree) - longueur(textTest) + 1
         Si textTest == SousChaine(textEntree, cpt, longueur(textTest))
          similaire <- similaire + 1
             Si pos1 == 0 
@@ -20,7 +20,7 @@ Début caractText2
             Fin si
             posf <- cpt
         Fin si
-        cpt <- cpt + 1
+        cpt <- cpt + longueur(textTest)
     Fin tant que
 
     Si similaire >= 1

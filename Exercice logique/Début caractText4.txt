@@ -15,7 +15,7 @@ Début caractText4
     Afficher "Veuillez entrer votre caractère de fin"
     Saisir fin
 
-    Si debut > 0 et fin <= longueur(textEntree)
+    Si debut > 0 et fin <= longueur(textEntree) + 1
         Pour cpt de debut a fin-1
             result = result (+) caract(textEntree, cpt)
         cpt suivant

@@ -10,14 +10,14 @@ Début caractText3
 
     Afficher "Veuillez entrer un texte"
     Saisir textEntree
-    Qfficher "Veuillez entrer le texte à rechercher"
+    Afficher "Veuillez entrer le texte à rechercher"
     Saisir textRecherche
     Afficher "Veuillez entrer le texte de remplacement"
     Saisir textRemplacement
 
-    Tant que cpt <- (longueur(textEntree) - longueur(textRecherche))
-        Si textRemplacement != SousChaine(textEntree, cpt, cpt+longueur(textTest))
-            cpt <- cpt + texte
+    Tant que cpt <- (longueur(textEntree) - longueur(textRecherche) + 1)
+        Si textRemplacement == SousChaine(textEntree, cpt, cpt+longueur(textTest))
+            cpt <- cpt + textRecherche
             textModif <- textModif + textRemplacement
 
         Sinon

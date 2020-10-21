@@ -1,0 +1,41 @@
+Début minmaxTab
+	DECLARATION DES VARIABLES
+		CONST TAILLE:N <- 10
+		VAR tab:N[TABLEAU]
+		VAR ind:N <- 1
+		VAR max:N <- 0
+		VAR posmax:N <- 0
+		VAR min:N <- 0
+		VAR posmin:N <- 0
+		VAR somme:N <- 0
+		VAR moy:N <- 0
+	DECLARATION DES VARIABLES	
+
+	Afficher "Entrez les", TAILLE ,"valeurs"
+	POUR ind ALLANT DE 1 à TAILLE
+		Saisir tab[ind]
+		somme <- somme + tab[ind]
+	ind suivant
+
+	moy <- somme / TAILLE
+	max <- tab[1]
+	min <- tab[1]
+
+	POUR ind ALLANT DE 1 à TAILLE
+		Si tab[ind] > max
+		ALORS
+			max <- tab[ind]
+			posmax <- ind
+		Sinon
+			Si tab[ind] < min
+			ALORS
+				min <- tab[ind]
+				posmin <- ind
+			Finsi
+		Finsi
+	ind suivant
+
+	Afficher "La moyenne vaut", moy
+	Afficher "Le max est", max,"et sa position dans était :", posmax
+	Afficher "Le min est", min,"et sa position dans était :", posmin
+Fin minmaxTab
