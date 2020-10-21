@@ -1,0 +1,19 @@
+Début vecteurInverse
+	DECLARATION VARIABLES
+		CONST TAILLE:N <- 10
+		VAR tab:N[TABLEAU]
+		VAR tab2:N[TABLEAU]
+		VAR ind:N <- 1
+		VAR zéro:N <- 0
+		VAR ind2:N <- 10
+	DECLARATION VARIABLES
+
+	Afficher "Entrez les", TAILLE,"valeurs"
+	POUR ind ALLANT DE 1 à TAILLE
+		Saisir tab[ind]
+		tab2[ind] <- tab[ind]
+	ind suivant
+
+	POUR ind2 ALLANT DE 10 à 1
+		tab[zéro + 1] <- tab2[ind2]
+	ind suivant

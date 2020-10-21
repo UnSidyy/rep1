@@ -2,7 +2,7 @@ Début minmaxTab
 	DECLARATION DES VARIABLES
 		CONST TAILLE:N <- 10
 		VAR tab:N[TABLEAU]
-		VAR ind:N <- 1
+		VAR ind:N <- 2
 		VAR max:N <- 0
 		VAR posmax:N <- 0
 		VAR min:N <- 0
@@ -20,8 +20,10 @@ Début minmaxTab
 	moy <- somme / TAILLE
 	max <- tab[1]
 	min <- tab[1]
+	posmax <- 1
+	posmin <- 1
 
-	POUR ind ALLANT DE 1 à TAILLE
+	POUR ind ALLANT DE 2 à TAILLE
 		Si tab[ind] > max
 		ALORS
 			max <- tab[ind]

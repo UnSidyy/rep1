@@ -1,0 +1,14 @@
+Début vecteurDouble
+	DECLARATION VARIABLES
+		CONST TAILLE:N <- 16
+		VAR tab:N[TABLEAU]
+		VAR ind:N <- 2
+		VAR somme:N <- 1
+	DECLARATION VARIABLES
+
+	Afficher "Entrez les", TAILLE - 1 ,"valeurs"
+	POUR ind ALLANT DE 1 à TAILLE
+		Saisir tab[ind]
+		somme <- somme + tab[ind] * 2
+	ind suivant
+Fin vecteurDouble
