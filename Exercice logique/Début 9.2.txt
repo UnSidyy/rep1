@@ -1,0 +1,16 @@
+Début 9.2
+	VARIABLES LOCALES
+		VAR tailleN - 5 
+		VAR indN - 1
+		VAR tabN [taille]
+		VAR tabCopie [1,5]
+	VARIABLES LOCALES
+
+	Pour ind allant de 1 à taille
+		tab[ind] - ind
+	ind suivant
+
+	Pour ind allant de 1 à taille
+		tabCopie[1,ind] - tab[ind]
+	ind suivant
+Fin 9.2
